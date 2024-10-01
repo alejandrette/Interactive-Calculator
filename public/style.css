@@ -1,0 +1,44 @@
+body {
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.screen {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 3rem; /* Tamaño más grande */
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Redondear la pantalla */
+}
+
+button {
+    width: 60px !important;  /* Ajusta el tamaño para ser proporcional al diseño */
+    height: 60px; /* Igualar la altura al ancho */
+    margin: 5px;
+    border-radius: 50%; /* Botones circulares */
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5;
+    border: none; /* Sin bordes */
+    color: white !important;
+}
+
+.btn.bg-secondary {
+    background-color: #505050;
+}
+
+.btn.bg-secondary-subtle {
+    background-color: #d4d4d2; /* Gris más claro */
+}
+
+.btn.bg-warning {
+    background-color: #ff9500;
+    color: white;
+}
