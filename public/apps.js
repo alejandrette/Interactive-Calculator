@@ -1,8 +1,8 @@
 let screen = document.getElementById("screen");
 let btns = document.querySelectorAll(".key");
 let equal = document.getElementById("equal");
-let ac = document.getElementById("AC");
-let c = document.getElementById("C");
+let deleteAll = document.getElementById("AC");
+let deleteElement = document.getElementById("C");
 
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -27,12 +27,12 @@ equal.addEventListener("click", () => {
     }
 });
 
-ac.addEventListener("click", () => {
+deleteAll.addEventListener("click", () => {
     screen.textContent = "0";
     return;
 });
 
-c.addEventListener("click", () => {
+deleteElement.addEventListener("click", () => {
     screen.textContent = screen.textContent.slice(0, -1) || "0";
     return;
 });
