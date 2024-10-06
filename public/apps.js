@@ -11,25 +11,28 @@ btns.forEach(btn => {
         }
         const btnPressed = btn.textContent;
         screen.textContent += btnPressed;
-
-        equal.addEventListener("click", () => {
-            if (screen.textContent.slice(-2) === "/0") {
-                screen.textContent = "Error!";
-            }
-            try {
-                screen.textContent = eval(screen.textContent)
-            } catch (error) {
-                screen.textContent = "Error!";
-            }
-        });
-        
-        ac.addEventListener("click", () => {
-            screen.textContent = "0";
-        });
-
-        c.addEventListener("click", () => {
-            screen.textContent = screen.textContent.substring(0, screen.textContent -1);
-            console.log(screen.textContent.substring(0, screen.textContent -1));
-        });
     })
+});
+
+equal.addEventListener("click", () => {
+    if (screen.textContent.slice(-2) === "/0") {
+        screen.textContent = "Error!";
+        return;
+    }
+
+    try {
+        screen.textContent = eval(screen.textContent)
+    } catch (error) {
+        screen.textContent = "Error!";
+    }
+});
+
+ac.addEventListener("click", () => {
+    screen.textContent = "0";
+    return;
+});
+
+c.addEventListener("click", () => {
+    screen.textContent = screen.textContent.slice(0, -1) || "0";
+    return;
 });
