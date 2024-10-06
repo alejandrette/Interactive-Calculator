@@ -11,22 +11,23 @@ body {
 .screen {
     background-color: #1c1c1c;
     color: #ffffff;
-    font-size: 3rem; /* Tamaño más grande */
+    font-size: 3rem;
     text-align: right;
     padding: 20px;
+    margin-left: 120px;
     margin-bottom: 10px;
-    border-radius: 10px; /* Redondear la pantalla */
+    border-radius: 10px;
 }
 
 button {
-    width: 60px !important;  /* Ajusta el tamaño para ser proporcional al diseño */
-    height: 60px; /* Igualar la altura al ancho */
+    width: 60px !important;
+    height: 60px;
     margin: 5px;
-    border-radius: 50%; /* Botones circulares */
+    border-radius: 50%;
     font-size: 1.2rem !important;
     font-weight: 500 !important;
     line-height: 1.5;
-    border: none; /* Sin bordes */
+    border: none;
     color: white !important;
 }
 
@@ -35,7 +36,7 @@ button {
 }
 
 .btn.bg-secondary-subtle {
-    background-color: #d4d4d2; /* Gris más claro */
+    background-color: #d4d4d2;
 }
 
 .btn.bg-warning {
